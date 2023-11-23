@@ -3,6 +3,11 @@ import './css/CardBody.css'
 import './css/Item.css'
 import './css/Navbar.css'
 import { useEffect, useState } from 'react';
+import Navbar from './components/Navbar'
+import Home from './components/Home';
+import Cart from './components/Cart'
+import Saved from './components/Saved';
+import Item from './components/Item';
 
 function App() 
 {
@@ -139,7 +144,6 @@ function App()
 
   return (
     <>
-      
     </>
   );
 }
