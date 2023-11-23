@@ -1,0 +1,26 @@
+h1
+{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+div.parent-flex
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div.child-flex
+{
+    flex-basis: 20%;
+    margin: 15px;
+    width: 400px;
+}
+.card-img-top
+{
+    height: 300px;
+}
+.card-title
+{
+    height: 250px;
+}
