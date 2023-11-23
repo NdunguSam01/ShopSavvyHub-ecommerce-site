@@ -3,6 +3,7 @@ import './css/CardBody.css'
 import './css/Item.css'
 import './css/Navbar.css'
 import { useEffect, useState } from 'react';
+import { Routes, Route} from 'react-router-dom';
 import Navbar from './components/Navbar'
 import Home from './components/Home';
 import Cart from './components/Cart'
@@ -144,6 +145,13 @@ function App()
 
   return (
     <>
+    <Navbar/>
+    <Routes>
+      <Route path='/' element={<Home products={products}/>}></Route>
+      <Route path='/cart' element={<Cart cart={cart} deleteCartItem={deleteCartItem}/>}></Route>
+      <Route path='/saved' element={<Saved savedItems={savedItems} deleteSavedItem={deleteSavedItem}/>}></Route>
+      <Route path='/:id' element={<Item products={products} addItemToCart={addItemToCart} addItemToSaved={addItemToSaved}/>}></Route>
+    </Routes>
     </>
   );
 }
