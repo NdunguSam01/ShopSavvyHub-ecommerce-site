@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# Shop Savvy Ecommerce Site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a mock online shopping store built using ReactJS and an API that allows users to view the items available in stock, add and remove items to the cart and also bookmark items that they can purchase later
 
-## Available Scripts
+## Pre-requisites
 
-In the project directory, you can run:
+This project has already been deployed online and can be viewed using the link below:
 
-### `npm start`
+[https://ndungusam01.github.io/ShopSavvyHub-ecommerce-site/](https://ndungusam01.github.io/ShopSavvyHub-ecommerce-site/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Alterntively, if you want to run the machine locally and make changes to the project, the following softwares need to be installed;
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[Node.js](https://nodejs.org/): Download and install Node.js from the official website.
 
-### `npm test`
+## Getting started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 1. Clone the repository
 
-### `npm run build`
+You can do this by :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+i. Opening the terminal and pasting the following command 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/NdunguSam01/ShopSavvyHub-ecommerce-site.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ii. Downloading the zipped file by clicking Code (the green button at the top) then Download ZIP option. Once the download is complete, open File Explorer then locate the downloaded file under Downloads. Open the folder and extract it to your desired file location
 
-### `npm run eject`
+## 2. Navigate to the project directory
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Once done, navigate to where the project is and open it using your desired text editor
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+cd ShopSavvyHub-ecommerce-site
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 3. Installing dependencies
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Since the project's dependencies are not installed, you need to run the following command in the terminal.
 
-## Learn More
+```bash
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This command will install the various dependencies e.g. react-app required to successully run this project 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## 4. Running the React.JS application
+To run the React application, type the following command in the terminal
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm start
+```
+Once this command runs, the page will be automatically be opened in your browser.
 
-### Analyzing the Bundle Size
+## 5. Expected results
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Once the page loads, the user will see a list of products, he/she can view the items and decide on whether they want to add the items to cart or bookmark them.
 
-### Making a Progressive Web App
+## Authors
+[Samuel Muigai](https://github.com/NdunguSam01)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+[Hesbon Angwenyi](https://github.com/hesbonmanyi254)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Dian Jeruto](https://github.com/Dianjeruto)
