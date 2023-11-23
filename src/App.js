@@ -116,6 +116,27 @@ function App()
       })
   }
 
+  //Function to delete item from cart
+  const deleteCartItem= id =>
+  {
+    console.log(id)
+
+    //Making the delete request
+    fetch(`https://phase-2-ecommerce-project-api.onrender.com/cart/${id}`,
+    {
+      method: "DELETE",
+      headers:
+      {
+        "Content-Type" : "application/json"
+      }
+    })
+    .then(alert("Item removed from cart"))
+
+    //Updating the state
+    const remainingSavedItems=cart.filter(cartItem => cartItem.id !== parseInt(id))
+    setCart(remainingSavedItems)
+  }
+
   return (
     <>
       
