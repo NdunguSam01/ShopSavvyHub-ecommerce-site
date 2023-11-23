@@ -6,7 +6,7 @@ This is a mock online shopping store built using ReactJS and an API that allows 
 
 This project has already been deployed online and can be viewed using the link below:
 
-[https://ndungusam01.github.io/ShopSavvyHub-ecommerce-site/](https://ndungusam01.github.io/ShopSavvyHub-ecommerce-site/)
+[https://shopsavvy-ecommerce-site.netlify.app/](https://shopsavvy-ecommerce-site.netlify.app/)
 
 Alterntively, if you want to run the machine locally and make changes to the project, the following softwares need to be installed;
 
