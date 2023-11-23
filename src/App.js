@@ -78,6 +78,44 @@ function App()
     setSavedItems(remainingSavedItems)
   }
 
+  //Function to add item to cart
+  const addItemToCart = id =>
+  {
+    //Checking if the item exists in the products state
+    const addedItem=products.find(product => product.id === parseInt(id))
+    let {image, title, price}=addedItem
+    
+    let quantity=1
+    let totalPrice=quantity*price
+
+    //Creating the object that will be added to the cart endpoint
+    let cartData=
+    {
+      image: image,
+      title: title,
+      quantity: quantity,
+      unitPrice: price,
+      totalPrice: totalPrice,
+    }
+    
+    //Making the POST request
+    fetch("https://phase-2-ecommerce-project-api.onrender.com/cart",
+    {
+      method: "POST",
+      headers:
+      {
+        "Content-Type" : "application/json"
+      },
+      body: JSON.stringify(cartData)
+    })
+    .then(response => response.json())
+    .then(item => 
+      {
+        alert("Item has been added to cart")
+        setCart([...cart, item])
+      })
+  }
+
   return (
     <>
       
