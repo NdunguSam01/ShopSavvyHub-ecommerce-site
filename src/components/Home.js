@@ -1,22 +1,27 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom"
+import CardBody from "./CardBody"
 
-const Home = ({ products }) => {
-  const productItems = products.map((product) => (
-    <div key={product.id}>
-      <NavLink to={`/items/${product.id}`}>
-        <img src={product.image} alt={product.name} />
-        <p>{product.name}</p>
-      </NavLink>
-    </div>
-  ));
-
-  return (
-    <>
-      <h1>Home Page</h1>
-      {productItems}
-    </>
-  );
-};
-
+const Home = ({products}) => 
+{
+    const productMap=products.map(product =>
+        {
+            let {id, title , image}=product
+            return(
+                <div key={id} className="child-flex card">
+                    <CardBody id={id} title={title} image={image} />
+                    <NavLink to={`/${id}`} className="card-link btn btn-outline-primary col-12">View Item</NavLink>
+                </div>
+            )
+        })
+    
+    return ( 
+        <>
+            <h1>Products Page</h1>
+            <div className="parent-flex">
+                {productMap}
+            </div>
+        </>
+     );
+}
+ 
 export default Home;
