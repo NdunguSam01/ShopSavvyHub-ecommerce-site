@@ -1,5 +1,7 @@
 # Shop Savvy Ecommerce Site
 
+## Project Description
+
 This is a mock online shopping store built using ReactJS and an API that allows users to view the items available in stock, add and remove items to the cart and also bookmark items that they can purchase later
 
 ## Pre-requisites
@@ -12,7 +14,7 @@ Alterntively, if you want to run the machine locally and make changes to the pro
 
 [Node.js](https://nodejs.org/): Download and install Node.js from the official website.
 
-## Getting started
+## Getting started / Project Setup instructions
 
 ## 1. Clone the repository
 
@@ -63,3 +65,11 @@ Once the page loads, the user will see a list of products, he/she can view the i
 [Hesbon Angwenyi](https://github.com/hesbonmanyi254)
 
 [Dian Jeruto](https://github.com/Dianjeruto)
+
+## Copyright
+
+Copyright (c) 2023
+
+## License
+
+This project has been licensed by the MIT license
