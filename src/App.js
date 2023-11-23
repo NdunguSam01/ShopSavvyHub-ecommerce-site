@@ -126,7 +126,6 @@ function App()
   //Function to delete item from cart
   const deleteCartItem= id =>
   {
-    console.log(id)
 
     //Making the delete request
     fetch(`https://phase-2-ecommerce-project-api.onrender.com/cart/${id}`,
