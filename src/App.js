@@ -2,6 +2,7 @@ import './App.css';
 import './css/CardBody.css'
 import './css/Item.css'
 import './css/Navbar.css'
+import './css/Cart.css'
 import { useEffect, useState } from 'react';
 import { Routes, Route} from 'react-router-dom';
 import Navbar from './components/Navbar'

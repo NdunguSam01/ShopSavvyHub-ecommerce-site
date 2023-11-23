@@ -30,6 +30,7 @@ const Cart = ({cart, deleteCartItem}) =>
           <th>Quantity</th>
           <th>Unit price</th>
           <th>Total price</th>
+          <th>Action</th>
         </tr>
         {cartMap}
       </table>
