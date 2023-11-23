@@ -58,7 +58,26 @@ function App()
     //Updating the saved items state
     setSavedItems([...savedItems, savedProduct])
   }
-  
+
+  //Function to remove item from saved items
+  const deleteSavedItem = id =>
+  {
+    //Making the delete request
+    fetch(`https://phase-2-ecommerce-project-api.onrender.com/savedItems/${id}`,
+    {
+      method: "DELETE",
+      headers:
+      {
+        "Content-Type" : "application/json"
+      }
+    })
+    .then(alert("Item removed from saved items"))
+
+    //Updating the state
+    const remainingSavedItems=savedItems.filter(savedItem => savedItem.id !== parseInt(id))
+    setSavedItems(remainingSavedItems)
+  }
+
   return (
     <>
       
