@@ -1,0 +1,25 @@
+div.flex-container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div.flex-item
+{
+    flex-basis: 35%;
+}
+div.flex-item img
+{
+    height: 450px;
+}
+div.flex-item h2
+{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.8em;
+}
+div.flex-item p
+{
+    font-size: 1.2em;
+}
